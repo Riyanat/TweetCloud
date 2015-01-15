@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">	
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.tweetcloud.services.authenticate.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Callback</servlet-name>
+		<servlet-class>com.tweetcloud.services.authenticate.LoginCallbackServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Callback</servlet-name>
+		<url-pattern>/callback</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Signout</servlet-name>
+		<servlet-class>com.tweetcloud.services.authenticate.SignoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Signout</servlet-name>
+		<url-pattern>/signout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Crawler</servlet-name>
+		<servlet-class>com.tweetcloud.services.datahandling.CrawlerBatchJobServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Crawler</servlet-name>
+		<url-pattern>/crawler</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DataRetriever</servlet-name>
+		<servlet-class>com.tweetcloud.services.datahandling.DataRetrieverServlet</servlet-class>
+	</servlet>
+		<servlet-mapping>
+		<servlet-name>DataRetriever</servlet-name>
+		<url-pattern>/get_data</url-pattern>
+	</servlet-mapping>
+	
+
+<!-- MapReduce Servlets -->
+ <servlet>
+    <servlet-name>mapreduce</servlet-name>
+    <servlet-class>com.google.appengine.tools.mapreduce.MapReduceServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>mapreduce</servlet-name>
+    <url-pattern>/mapreduce/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>pipeline</servlet-name>
+    <servlet-class>com.google.appengine.tools.pipeline.impl.servlets.PipelineServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pipeline</servlet-name>
+    <url-pattern>/_ah/pipeline/*</url-pattern>
+  </servlet-mapping>
+	
+</web-app>

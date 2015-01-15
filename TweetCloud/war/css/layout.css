@@ -1,0 +1,129 @@
+.topbar {
+	width: 100%;
+	height: 45px;
+}
+
+body {
+	background: url(../img/background-cloud-two.jpg);
+	font-family: tahoma, Arial, sans-serif;
+	font-size: 12px;
+}
+
+.home-page-container {
+	margin: 0 auto;
+	width: 890px;
+	height: 100%;
+}
+
+.signin-page-container {
+	margin: 0 auto;
+	background-color: white;
+	width: 890px;
+	height: 400px;
+	text-align: center; <!--
+	border: 2px solid #4099FF; -->
+	background-color: white;
+	padding: 50px 50px 50px 50px;
+}
+
+.title {
+	font-size: 21px;
+	font-weight: bold;
+	color: #292f33;
+}
+
+.dashboard-content {
+	position: relative;
+	width: 100%;
+}
+
+.sub-title {
+	font-size: 14px;
+	color: #999999;
+}
+
+.soft-box {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.dashboard {
+	background-color: white;
+	width: 100%;
+	height: 140px;
+	float: left;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.dashboard-container {
+	text-align: center;
+}
+
+.logo {
+	width: 50%;
+}
+
+svg {
+	width: 100%;
+	height: 100%;
+}
+
+.summary {
+	background-color: white;
+	width: 100%;
+	height: 400px;
+	float: right;
+	text-align: center;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.summary-content {
+	position: relative;
+	top: 30px;
+}
+
+.picture-border {
+	border: 3px solid #4099FF;
+	border-radius: 5px;
+}
+
+h1 {
+	text-align:center;
+}
+
+#picture {
+	float:left;
+	margin:5px 5px 5px 5px;
+}
+
+.list {
+	position: relative;
+	top: 10px;
+	float: left;
+	background-color: white;
+	width: 100%;
+	top: 10px;
+	margin: auto;
+	min-height:100%;
+}
+
+.entry {
+	font-size: 12px;
+	border-bottom: 1px solid #e1e8ed;
+	cursor: pointer;
+	position: relative;
+	min-height: 50px;
+	padding: 9px 12px;
+}
+
+p {
+	font-style: bold;
+}
+
+.float-left {
+	float:left;
+}

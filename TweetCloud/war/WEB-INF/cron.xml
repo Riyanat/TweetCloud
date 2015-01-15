@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+  <cron>
+    <url>/crawler</url>
+    <description>Crawls for new tweets published by followers of all registered users</description>
+    <schedule>every 12 hours</schedule>
+  </cron>
+</cronentries>
+
+<!--<cronentries/>-->
