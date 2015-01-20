@@ -4,5 +4,7 @@ TweetCloud is a web application for organising  tweets  using  visualisation. Fo
 
 <img src = "TweetCloud/war/img/tagcloud.PNG" width = "30%"/>
 
+TweetCloud is built on Google App Engine (gae) and utilizes a Google technologies for data processing and storage such as cron jobs, mapReduces, and datastore.
+
 Visit the web app: 
 * mytweetcloud.appspot.com
