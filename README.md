@@ -6,5 +6,4 @@ TweetCloud is a web application for organising  tweets  using  visualisation. Fo
 
 TweetCloud is built on Google App Engine and utilizes Google technologies for data processing and storage such as cron jobs, mapReduces, and datastore.
 
-Visit the web app: 
-* mytweetcloud.appspot.com
+
